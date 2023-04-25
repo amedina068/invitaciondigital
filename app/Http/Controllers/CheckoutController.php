@@ -35,7 +35,9 @@ class CheckoutController extends Controller
 
         UserPlan::create([
             'user_id' => $user->id,
-            'plan_id' => $request->plan_id
+            'plan_id' => $request->plan_id,
+            'name' => $request->name,
+            'slug' => Str::slug($request->name)
         ]);
         
         return redirect('dashboard');

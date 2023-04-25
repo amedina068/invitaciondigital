@@ -15,6 +15,8 @@ return new class extends Migration
             $table->id();
             $table->foreignId('user_id');
             $table->foreignId('plan_id');
+            $table->string('name');
+            $table->string('slug')->index()->unique()->nullable();
             $table->timestamps();
         });
     }

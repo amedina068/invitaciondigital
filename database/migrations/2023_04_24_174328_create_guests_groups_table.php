@@ -19,9 +19,10 @@ return new class extends Migration
             $table->integer('members');
             $table->string('email')->nullable();
             $table->string('phone')->nullable();
+            $table->string('notes')->nullable();
+            $table->integer('confirmed_members')->nullable();
             $table->timestamp('invitation_sent_at')->nullable();
             $table->timestamp('confirmed_at')->nullable();
-            $table->string('cancelation_reason')->nullable();
             $table->timestamp('canceled_at')->nullable();
             $table->timestamps();
         });

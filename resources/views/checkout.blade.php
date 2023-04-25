@@ -13,6 +13,10 @@
       <input type="text" name="email">
     </div>
     <div>
+      <label for="">nombre de evento</label>
+      <input type="text" name="name">
+    </div>
+    <div>
       <label for="">plan</label>
       <select name="plan_id" id="">
         @foreach($plans as $plan)
