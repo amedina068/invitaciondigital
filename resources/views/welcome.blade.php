@@ -32,13 +32,24 @@
                     <path d="M89.4999 384C-155 180.5 162.314 -146.199 344.048 -161.151L931.506 61.4819L954.536 908.564C723 855.5 189.5 958.5 216.967 822.297C296.079 430.008 204.315 479.562 89.4999 384Z" fill="#DEF0EB"/>
                 </svg>    
             </div>
-            <div class="max-w-7xl relative z-10 h-[750px] mx-auto flex items-end justify-end">
-                <div class="">
-                    <img src="/img/novios.png" alt="">
+            <div class="absolute right-0 mt-20 mr-56">
+                <img src="/img/novios.png" alt="">
+            </div>            
+            <div class="inset-0 absolute" style="background: linear-gradient(0deg, #F4F4F4 0%, rgba(255, 255, 255, 0) 100%);"></div>
+            <div class="relative z-20 max-w-7xl mx-auto">
+                <div>
+                    <h1 class="text-primary text-5xl mt-56">
+                        <span>Te ayudamos a vivir</span>
+                        <span class="block font-bold">el evento de tus sueños</span>
+                    </h1>
+                    <p class="mt-8 text-primary max-w-xl text-lg">
+                        Comparte todos los detalles de tu evento y asegúrate de vivir ese gran día con las personas que más quieres.
+                    </p>
+
+                    <a href="" class="block max-w-lg mt-8 bg-secondary py-4 text-center rounded-lg text-white font-semibold">Ver ejemplos</a>
+
                 </div>
             </div>
-            
-            <div class="inset-0 absolute z-20" style="background: linear-gradient(0deg, #F4F4F4 0%, rgba(255, 255, 255, 0) 100%);"></div>
             
         </div>
 
