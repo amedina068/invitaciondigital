@@ -14,7 +14,7 @@ return new class extends Migration
         Schema::create('guests_groups', function (Blueprint $table) {
             $table->id();
             $table->string('uuid')->index();
-            $table->foreignId('user_plan_id');
+            $table->foreignId('order_id');
             $table->string('name');
             $table->integer('members');
             $table->string('email')->nullable();

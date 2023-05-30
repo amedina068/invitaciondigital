@@ -13,9 +13,8 @@ Route::get('/', [ WelcomeController::class, 'index' ]);
 
 Route::get('/demos/{demoId}', [ DemoController::class, 'show' ]);
 
-Route::get('/checkout', [ CheckoutController::class, 'create' ]);
-Route::post('/checkout', [ CheckoutController::class, 'store' ]);
-
+Route::get('/planes/{planId}/checkout', [ CheckoutController::class, 'create' ]);
+Route::get('/orden-completada', [ CheckoutController::class, 'store']);
 Route::get('invitaciones/{userPlanSlug}/{guestsGroupUuid?}', [ UserPlanInvitationController::class, 'show' ]);
 Route::patch('invitaciones/{userPlanSlug}', [ GuestsGroupInvitationController::class, 'update' ]);
 

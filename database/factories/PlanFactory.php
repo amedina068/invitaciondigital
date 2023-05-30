@@ -17,7 +17,8 @@ class PlanFactory extends Factory
     public function definition(): array
     {
         return [
-            'name' => 'Plan '.$this->faker->word
+            'name' => 'Plan '.$this->faker->word,
+            'price' => mt_rand(10000, 1000000),
         ];
     }
 }

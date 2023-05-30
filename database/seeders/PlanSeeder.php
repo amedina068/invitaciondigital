@@ -13,6 +13,19 @@ class PlanSeeder extends Seeder
      */
     public function run(): void
     {
-        Plan::factory()->times(2)->create();
+        collect([
+            [
+                'name' => 'Plan básico',
+                'price' => 50000,
+                'stripe_price_id' => 'price_1NDbe7BiGzyJGYgenyNZ1ZUR'
+            ],
+            [
+                'name' => 'Plan pro',
+                'price' => 100000,
+                'stripe_price_id' => 'price_1NDbe7BiGzyJGYgeeBMmTZdn'
+            ],
+        ])->each(function ($plan) {
+            Plan::factory()->create($plan);
+        });
     }
 }

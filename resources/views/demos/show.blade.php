@@ -4,7 +4,7 @@
   <div class="mt-8">
     @foreach($plans as $plan)
       <div>
-        <a href="/checkout?plan_id={{ $plan->id }}" class="underline text-indigo-700 font-semibold">Comprar {{ $plan->name }}</a>
+        <a href="/planes/{{ $plan->id }}/checkout" class="underline text-indigo-700 font-semibold">Comprar {{ $plan->name }}</a>
       </div>
     @endforeach
   </div>
