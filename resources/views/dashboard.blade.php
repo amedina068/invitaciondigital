@@ -1,4 +1,4 @@
-<x-guest-layout>
+<x-app-layout>
     <p>Hola {{ Auth::user()->name }}</p>
     <p>este es tu dashboard</p>
 
@@ -6,4 +6,4 @@
         <a href="/invitados/crear">Invitar familia</a>
     </p>
 
-</x-guest-layout>
+</x-app-layout>
