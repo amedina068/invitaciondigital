@@ -3,14 +3,15 @@
 namespace App\Http\Controllers;
 
 use App\Models\GuestsGroup;
+use App\Models\Order;
 use App\Models\UserPlan;
 use Illuminate\Http\Request;
 
-class UserPlanInvitationController extends Controller
+class OrderInvitationController extends Controller
 {
-    public function show($userPlanSlug, $guestsGroupUuid = null)
+    public function show($orderSlug, $guestsGroupUuid = null)
     {
-        $userPlan = UserPlan::query()->where('slug', $userPlanSlug)->firstOrFail();
+        $userPlan = Order::query()->where('slug', $orderSlug)->firstOrFail();
 
         $guestsGroup = GuestsGroup::query()->where('uuid', $guestsGroupUuid)->first();
 

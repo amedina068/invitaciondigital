@@ -4,7 +4,11 @@
   <div class="mt-8">
     @foreach($plans as $plan)
       <div>
-        <a href="/planes/{{ $plan->id }}/checkout" class="underline text-indigo-700 font-semibold">Comprar {{ $plan->name }}</a>
+        <form action="/planes/{{ $plan->id }}/checkout" method="POST">
+          @csrf
+          <input type="hidden" name="demo_id" value="{{ $demo->id }}">
+          <button class="underline text-indigo-700 font-semibold">Comprar {{ $plan->name }}</button>
+        </form>
       </div>
     @endforeach
   </div>

@@ -14,7 +14,9 @@ return new class extends Migration
         Schema::create('orders', function (Blueprint $table) {
             $table->id();
             $table->foreignId('user_id');
+            $table->foreignId('demo_id');
             $table->foreignId('plan_id');
+            $table->string('slug')->unique()->index();
             $table->timestamps();
         });
     }

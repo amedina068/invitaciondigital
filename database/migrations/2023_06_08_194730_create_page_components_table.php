@@ -11,10 +11,11 @@ return new class extends Migration
      */
     public function up(): void
     {
-        Schema::create('demos', function (Blueprint $table) {
+        Schema::create('page_components', function (Blueprint $table) {
             $table->id();
-            $table->string('name');
-            $table->json('page_components')->nullable();
+            $table->foreignId('order_id');
+            $table->string('component_name');
+            $table->json('variants')->nullable();
             $table->timestamps();
         });
     }
@@ -24,6 +25,6 @@ return new class extends Migration
      */
     public function down(): void
     {
-        Schema::dropIfExists('demos');
+        Schema::dropIfExists('page_components');
     }
 };

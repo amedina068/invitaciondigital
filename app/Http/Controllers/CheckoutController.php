@@ -2,7 +2,9 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\Demo;
 use App\Models\Order;
+use App\Models\PageComponent;
 use App\Models\Plan;
 use App\Models\User;
 use App\Models\UserPlan;
@@ -30,7 +32,8 @@ class CheckoutController extends Controller
             'quantity' => 1,
           ]],
           'metadata' => [
-            'plan_id' => $plan->id
+            'plan_id' => $plan->id,
+            'demo_id' => $request->demo_id
           ],
           'mode' => 'payment',
           'success_url' => url('orden-completada').'?session_id={CHECKOUT_SESSION_ID}',
@@ -54,14 +57,25 @@ class CheckoutController extends Controller
         ], [
             'name' => $session->customer_details->name,
             'uuid' => (string)Str::uuid(),
-            
             'password' => bcrypt(Str::random(16))
         ]);
 
-        Order::create([
+        $order = Order::create([
             'user_id' => $user->id,
-            'plan_id' => $session->metadata->plan_id
+            'plan_id' => $session->metadata->plan_id,
+            'demo_id' => $session->metadata->demo_id,
+            'slug' => Str::random(12),
         ]);
+
+        $pageComponents = json_decode(Demo::query()->find($session->metadata->demo_id)
+            ->page_components, true);
+
+        foreach ($pageComponents as $pageComponent) {
+            PageComponent::create([
+                'order_id' => $order->id,
+                'component_name' => $pageComponent
+            ]);
+        }
 
         Auth::login($user, true);
 
