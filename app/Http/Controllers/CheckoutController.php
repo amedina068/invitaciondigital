@@ -49,10 +49,12 @@ class CheckoutController extends Controller
             return redirect('/');
         }
 
-        $user = User::create([
+        $user = User::firstOrCreate([
+            'email' => $session->customer_details->email,
+        ], [
             'name' => $session->customer_details->name,
             'uuid' => (string)Str::uuid(),
-            'email' => $session->customer_details->email,
+            
             'password' => bcrypt(Str::random(16))
         ]);
 

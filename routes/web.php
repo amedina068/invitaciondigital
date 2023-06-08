@@ -20,6 +20,7 @@ Route::patch('invitaciones/{userPlanSlug}', [ GuestsGroupInvitationController::c
 
 Route::middleware('auth')->group(function () {
     Route::get('dashboard', [ DashboardController::class, 'index' ]);
+    Route::get('invitados', [ GuestsGroupController::class, 'index']);
     Route::post('invitados', [ GuestsGroupController::class, 'store']);
     Route::get('invitados/crear', [ GuestsGroupController::class, 'create']);
 });

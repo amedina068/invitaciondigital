@@ -1,24 +1,35 @@
-<x-guest-layout>
-  <form action="/invitados" method="POST">
-    @csrf
+<x-app-layout>
+  <x-slot:title>Agregar invitados</x-slot:title>
+  <div>
+    <form action="/invitados" method="POST" class="space-y-4">
     <div>
-      <label for="">name</label>
-      <input type="text" name="name">
+      @csrf
+      <x-base-label for="name">Familia</x-base-label>
+      <div class="mt-2 max-w-sm">
+        <x-base-input name="name" id="name" type="text"/>  
+      </div>
     </div>
     <div>
-      <label for="">cantidad de invitados</label>
-      <input type="text" name="members">
+      <x-base-label for="members">Invitados</x-base-label>
+      <div class="mt-2 max-w-sm">
+        <x-base-input name="members" id="members" type="number"/>  
+      </div>
     </div>
     <div>
-      <label for="">email</label>
-      <input type="text" name="email">
+      <x-base-label for="email">Email</x-base-label>
+      <div class="mt-2 max-w-sm">
+        <x-base-input name="email" id="email" type="email"/>  
+      </div>
     </div>
     <div>
-      <label for="">tel</label>
-      <input type="text" name="phone">
+      <x-base-label for="phone">Teléfono</x-base-label>
+      <div class="mt-2 max-w-sm">
+        <x-base-input name="phone" id="phone" type="text"/>  
+      </div>
     </div>
     <div>
-      <button>guardar</button>
+      <x-base-primary-button type="submit">Guardar</x-base-primary-button>
     </div>
   </form>
+  </div>
 </x-guest-layout>
