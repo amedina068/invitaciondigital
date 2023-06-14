@@ -22,12 +22,5 @@ class DemoSeeder extends Seeder
                 'date_time'
             ])
         ]);
-        Demo::factory()->times(4)->create([
-            'page_components' => json_encode([
-                'hero',
-                'location',
-                'date_time'
-            ])
-        ]);
     }
 }
