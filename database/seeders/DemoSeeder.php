@@ -14,13 +14,13 @@ class DemoSeeder extends Seeder
     public function run(): void
     {
         Demo::factory()->create([
-            'name' => 'Demo rerum 92',
-            'slug' => 'demo-rerum-92',
-            'page_components' => json_encode([
-                'hero',
-                'location',
-                'date_time'
-            ])
+            'name' => 'Demo Boda 1',
+            'slug' => 'demo-boda-1',
+        ]);
+
+        Demo::factory()->create([
+            'name' => 'Demo Boda 2',
+            'slug' => 'demo-boda-2',
         ]);
     }
 }

@@ -11,6 +11,7 @@
             <div class="grid md:grid-cols-2 gap-16">
                 <div class="flex justify-center">
                     <x-parents-item
+                        :rounded="$rounded"
                         he="Juan Pérez"
                         she="Juana Pérez"
                         title="Padres de la novia"
@@ -18,6 +19,7 @@
                 </div>
                 <div class="flex justify-center">
                     <x-parents-item
+                        :rounded="$rounded"
                         he="Juan Pérez"
                         she="Juana Pérez"
                         title="Padres del novio"
@@ -25,6 +27,7 @@
                 </div>
                 <div class="col-span-2 flex justify-center">
                     <x-parents-item
+                        :rounded="$rounded"
                         he="Juan Pérez"
                         she="Juana Pérez"
                         title="Padrinos de velación"

@@ -16,7 +16,8 @@ class DatePlaceItem extends Component
         public $hour,
         public $place,
         public $address,
-        public $mapsLink
+        public $mapsLink,
+        public bool $rounded,
     ) {
     }
 

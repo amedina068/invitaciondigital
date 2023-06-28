@@ -14,7 +14,8 @@ class ParentsItem extends Component
     public function __construct(
         public $title,
         public $he,
-        public $she
+        public $she,
+        public bool $rounded = false
     ) {
     }
 

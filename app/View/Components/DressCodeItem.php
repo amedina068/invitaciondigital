@@ -12,9 +12,13 @@ class DressCodeItem extends Component
      * Create a new component instance.
      */
     public function __construct(
+        public $headingColor,
+        public $titleColor,
+        public $descriptionColor,
         public $title,
         public $subtitle,
         public $note,
+        public $rounded
     ) {
     }
 

@@ -1,10 +1,11 @@
-<div class="bg-[#F8F9FA] py-20">
+<div class="py-20" style="background-color: {{ $backgroundColor }}">
     <div class="max-w-6xl mx-auto">
         <x-section-title color="#D28A55">Lugar y fecha</x-section-title>
 
         <div class="mt-16">
             <div class="grid md:grid-cols-2 gap-8">
                 <x-date-place-item
+                    :rounded="$rounded"
                     title="Ceremonia"
                     place="Basílica de San Fernando"
                     hour="19:00"
@@ -13,6 +14,7 @@
                 />
                 <div class="flex justify-end">
                     <x-date-place-item
+                        :rounded="$rounded"
                         title="Recepción"
                         place="Quinta las Gardenias"
                         hour="21:00"

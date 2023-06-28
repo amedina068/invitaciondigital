@@ -12,7 +12,8 @@ class RoundedDefaultImg extends Component
      * Create a new component instance.
      */
     public function __construct(
-        public $src
+        public $src,
+        public bool $rounded = false,
     ) {
     }
 

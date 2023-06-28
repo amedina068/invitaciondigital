@@ -11,7 +11,13 @@ class DressCodeSection extends Component
     /**
      * Create a new component instance.
      */
-    public function __construct()
+    public function __construct(
+        public $backgroundColor,
+        public $itemHeadingColor,
+        public $itemTitleColor,
+        public $itemDescriptionColor,
+        public bool $rounded = false
+    )
     {
         //
     }

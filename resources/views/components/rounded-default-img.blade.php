@@ -1,1 +1,1 @@
-<img src="{{ $src }}" alt="" class="rounded-full h-32 w-32 object-cover">
+<img src="{{ $src }}" alt="" class="{{ $rounded ? 'rounded-full' : 'rounded-lg' }} h-32 w-32 object-cover">

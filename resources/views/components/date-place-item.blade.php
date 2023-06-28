@@ -1,6 +1,7 @@
 <div class="flex space-x-6">
     <div>
         <x-rounded-default-img
+            :rounded="$rounded"
             src="/img/demo-hero.png"
         />
     </div>

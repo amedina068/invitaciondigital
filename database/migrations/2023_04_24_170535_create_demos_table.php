@@ -14,7 +14,6 @@ return new class extends Migration
         Schema::create('demos', function (Blueprint $table) {
             $table->id();
             $table->string('name');
-            $table->json('page_components')->nullable();
             $table->string('slug')->unique()->index();
             $table->timestamps();
         });
