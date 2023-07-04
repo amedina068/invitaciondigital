@@ -2,7 +2,7 @@
     <x-hero-section
         background-color="#152F4C"
         text-color="#FFFFFF"
-        demo
+        demo="1"
     />
     <x-inner-menu-section
         text-color="#FFFFFF"
@@ -34,6 +34,6 @@
     />
     <x-parents-section rounded demo="1" />
     <x-timeline-section demo="1" />
-    <x-gifts-section demo />
+    <x-gifts-section demo background-color="#F8F9FA" title-color="#D28A55"/>
     <x-confirmation-section demo />
 </x-guest-layout>

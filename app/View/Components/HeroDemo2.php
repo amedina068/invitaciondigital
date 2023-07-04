@@ -6,14 +6,14 @@ use Closure;
 use Illuminate\Contracts\View\View;
 use Illuminate\View\Component;
 
-class HeroSection extends Component
+class HeroDemo2 extends Component
 {
     /**
      * Create a new component instance.
      */
-    public function __construct(
-        public $demo
-    ) {
+    public function __construct()
+    {
+        //
     }
 
     /**
@@ -21,6 +21,6 @@ class HeroSection extends Component
      */
     public function render(): View|Closure|string
     {
-        return view('components.hero-section');
+        return view('components.hero-demo2');
     }
 }

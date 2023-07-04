@@ -5,7 +5,7 @@
         text-color="#ECA98E"
         demo
     />
-    <x-hero-section demo />
+    <x-hero-section demo="2" />
     <x-save-the-date-section
         src="/img/demo-hero.png"
         demo="2"
@@ -32,6 +32,6 @@
     <x-moments-section demo="2" />
     <x-parents-section demo="2" />
     <x-timeline-section demo="2" />
-    <x-gifts-section demo />
+    <x-gifts-section demo title-color="#52323D" background-color="#ECA98E" />
     <x-confirmation-section demo />
 </x-guest-layout>
