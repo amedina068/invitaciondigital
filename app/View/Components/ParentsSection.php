@@ -11,7 +11,10 @@ class ParentsSection extends Component
     /**
      * Create a new component instance.
      */
-    public function __construct(public bool $rounded =  false)
+    public function __construct(
+        public $demo,
+        public bool $rounded =  false
+    )
     {
         //
     }

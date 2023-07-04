@@ -12,7 +12,8 @@ class SectionTitle extends Component
      * Create a new component instance.
      */
     public function __construct(
-        public string $color
+        public string $color,
+        public bool $textLeft = false,
     ) {
     }
 

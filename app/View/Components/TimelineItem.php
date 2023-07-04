@@ -16,7 +16,9 @@ class TimelineItem extends Component
         public $place,
         public $time,
         public $mapsLink,
-        public $right = false
+        public $titleColor,
+        public $right = false,
+        public $icon = false
     )
     {
         //

@@ -12,8 +12,17 @@ class DatePlaceSection extends Component
      * Create a new component instance.
      */
     public function __construct(
+        public $titleColor,
         public $backgroundColor,
-        public bool $rounded = false
+        public $itemTitleColor,
+        public $itemPlaceColor,
+        public $itemHourColor,
+        public $itemAddressColor,
+        public $itemMapsLinkColor,
+        public $subtitle = '',
+        public $src = null,
+        public bool $rounded = false,
+        public string $text = 'center'
     ) {
     }
 

@@ -6,12 +6,12 @@ use Closure;
 use Illuminate\Contracts\View\View;
 use Illuminate\View\Component;
 
-class TimelineSection extends Component
+class ParentsDemo1 extends Component
 {
     /**
      * Create a new component instance.
      */
-    public function __construct(public $demo)
+    public function __construct()
     {
         //
     }
@@ -21,6 +21,6 @@ class TimelineSection extends Component
      */
     public function render(): View|Closure|string
     {
-        return view('components.timeline-section');
+        return view('components.parents-demo1');
     }
 }

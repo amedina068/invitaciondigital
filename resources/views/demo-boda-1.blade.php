@@ -10,9 +10,20 @@
         demo
     />
     <x-story-section demo />
-    <x-moments-section demo />
-    <x-save-the-date-section demo />
-    <x-date-place-section background-color="#F8F9FA" rounded demo />
+    <x-moments-section demo="1" />
+    <x-save-the-date-section demo="1" />
+    <x-date-place-section
+        title-color="#D28A55"
+        item-title-color="#D28A55"
+        item-place-color="#152F4C"
+        item-hour-color="#152F4C"
+        item-address-color="#152F4C"
+        item-maps-link-color="#D28A55"
+        src="/img/demo-hero.png"
+        background-color="#F8F9FA"
+        rounded
+        demo
+    />
     <x-dress-code-section
         item-heading-color="#D28A55"
         item-title-color="#FFFFFF"
@@ -21,8 +32,8 @@
         background-color="#152F4C"
         demo
     />
-    <x-parents-section rounded demo />
-    <x-timeline-section demo />
+    <x-parents-section rounded demo="1" />
+    <x-timeline-section demo="1" />
     <x-gifts-section demo />
     <x-confirmation-section demo />
 </x-guest-layout>

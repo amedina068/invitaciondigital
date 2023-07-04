@@ -18,6 +18,13 @@ class DatePlaceItem extends Component
         public $address,
         public $mapsLink,
         public bool $rounded,
+        public $titleColor,
+        public $placeColor,
+        public $hourColor,
+        public $addressColor,
+        public $mapsLinkColor,
+        public $src = null,
+        public $text = 'left'
     ) {
     }
 
