@@ -11,7 +11,7 @@ class GiftsSection extends Component
     /**
      * Create a new component instance.
      */
-    public function __construct(public $backgroundColor, public $titleColor)
+    public function __construct(public $backgroundColor, public $titleColor, public $titleFont= 'Poppins')
     {
         //
     }

@@ -16,7 +16,8 @@ class DressCodeSection extends Component
         public $itemHeadingColor,
         public $itemTitleColor,
         public $itemDescriptionColor,
-        public bool $rounded = false
+        public bool $rounded = false,
+        public string $titleFont = 'Poppins'
     )
     {
         //

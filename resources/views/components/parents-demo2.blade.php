@@ -1,6 +1,6 @@
 <div class="py-20 bg-white">
     <div class="max-w-7xl mx-auto">
-        <x-section-title color="#152F4C">Nuestros padres</x-section-title>
+        <x-section-title font="Rochester" color="#152F4C">Nuestros padres</x-section-title>
 
         <div class="mt-16">
             <div class="grid md:grid-cols-2 gap-16">

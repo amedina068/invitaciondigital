@@ -13,6 +13,7 @@ class SectionTitle extends Component
      */
     public function __construct(
         public string $color,
+        public string $font = 'Poppins',
         public bool $textLeft = false,
     ) {
     }

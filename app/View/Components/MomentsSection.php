@@ -11,7 +11,7 @@ class MomentsSection extends Component
     /**
      * Create a new component instance.
      */
-    public function __construct(public $demo)
+    public function __construct(public $demo, public string $titleFont = 'Poppins')
     {
         //
     }

@@ -19,6 +19,7 @@ class DatePlaceSection extends Component
         public $itemHourColor,
         public $itemAddressColor,
         public $itemMapsLinkColor,
+        public $titleFont = 'Poppins',
         public $subtitle = '',
         public $src = null,
         public bool $rounded = false,

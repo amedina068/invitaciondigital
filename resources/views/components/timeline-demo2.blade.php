@@ -1,7 +1,7 @@
 <div class="">
     <div class="py-20" style="background-color: #52323D">
         <div class="max-w-7xl mx-auto">
-            <x-section-title color="#FFFFFF">Event timeline</x-section-title>
+            <x-section-title font="Rochester" color="#FFFFFF">Event timeline</x-section-title>
 
             <div class="mt-16 flex flex-col items-center space-y-6">
                 <x-timeline-item

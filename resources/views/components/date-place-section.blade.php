@@ -1,6 +1,6 @@
 <div class="py-20 px-4 md:px-0" style="background-color: {{ $backgroundColor }}">
     <div class="max-w-6xl mx-auto">
-        <x-section-title color="{{ $titleColor }}">Lugar y fecha</x-section-title>
+        <x-section-title :font="$titleFont" color="{{ $titleColor }}">Lugar y fecha</x-section-title>
 
         @if($subtitle)
             <div class="pt-8 text-center text-2xl">
