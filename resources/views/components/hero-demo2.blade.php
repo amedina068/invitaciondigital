@@ -1,5 +1,5 @@
 <div x-data="{ openModal: false }">
-    <div class="relative h-screen h-[650px]" style="background-image:url('/img/demo-hero.png'); background-position: center; background-size: cover; background-repeat: no-repeat;">
+    <div class="relative h-[650px]" style="background-image:url('/img/demo-hero.png'); background-position: center; background-size: cover; background-repeat: no-repeat;">
         <div class=" max-w-4xl mx-auto text-center w-full flex flex-col items-center">
             <button class="mt-64" x-on:click="openModal = true">
                 <img src="/img/play-icon.png" alt="" class="h-16 w-16">
