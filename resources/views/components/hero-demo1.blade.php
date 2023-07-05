@@ -1,4 +1,4 @@
-<div class="relative py-16 sm:h-[800px]" style="background:linear-gradient(180deg, rgba(73, 81, 111, 0) 93.03%, #152F4C 100%), url('/img/demo-hero.png'); background-position: center; background-size: cover; background-repeat: no-repeat;">
+<div class="relative py-16 sm:py-0 sm:h-[800px]" style="background:linear-gradient(180deg, rgba(73, 81, 111, 0) 93.03%, #152F4C 100%), url('/img/demo-hero.png'); background-position: center; background-size: cover; background-repeat: no-repeat;">
     <div class="py-16 sm:py-0 sm:absolute sm:z-10 sm:max-w-4xl sm:mt-[478px] sm:mx-auto sm:inset-x-0 text-center w-full">
         <h2 class="text-white text-xl sm:text-3xl">Nuestra boda</h2>
         <h1 class="text-[#D28A55] text-5xl sm:text-6xl md:text-8xl mt-2 sm:mt-5">Martha & Alan</h1>

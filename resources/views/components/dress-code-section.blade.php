@@ -1,5 +1,5 @@
 <div class="bg-white py-20">
-    <div class="px-4 md:px-0 py-12 sm:py-0" style="background-color: {{ $backgroundColor }}">
+    <div class="px-4 md:px-0 py-16" style="background-color: {{ $backgroundColor }}">
         <div class="max-w-7xl mx-auto">
             <x-section-title :font="$titleFont" color="#D28A55">Dress Code</x-section-title>
     
