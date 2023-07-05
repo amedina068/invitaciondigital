@@ -1,5 +1,5 @@
 <div class="py-20 bg-white">
-    <div class="max-w-7xl mx-auto">
+    <div class="max-w-7xl mx-auto px-4 sm:px-0">
         <x-section-title color="#152F4C">Padres y padrinos</x-section-title>
         <div class="mt-12">
             <x-section-subtitle color="#152F4C">
@@ -31,7 +31,7 @@
                         title="Padres del novio"
                     />
                 </div>
-                <div class="col-span-2 flex justify-center">
+                <div class="md:col-span-2 flex justify-center">
                     <x-parents-item
                         rounded
                         he-color="#152F4C"

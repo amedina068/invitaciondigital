@@ -1,5 +1,5 @@
 <div class="bg-white py-20">
-    <div class="bg-[#152F4C] py-20">
+    <div class="bg-[#152F4C] py-20 px-4 sm:px-0">
         <x-section-title color="#D28A55">Save the date</x-section-title>
         <div class="max-w-xl mx-auto py-5 mt-8">
             <div class="grid gap-8 md:grid-cols-3">
