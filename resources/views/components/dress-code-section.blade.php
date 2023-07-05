@@ -4,7 +4,7 @@
             <x-section-title :font="$titleFont" color="#D28A55">Dress Code</x-section-title>
     
             <div class="mt-16">
-                <div class="grid md:grid-cols-2 gap-8">
+                <div class="grid md:grid-cols-2 gap-12 sm:gap-8">
                     <x-dress-code-item
                         :rounded="$rounded"
                         :heading-color="$itemHeadingColor"
